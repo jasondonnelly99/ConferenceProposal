@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Oxygen:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script>
+     $(document).ready(function(){
+            $('.aniview').AniView();
+        });
+      </script>
+  </head>
+  <body>
+  	<header>
+  <h1 class="animated rollIn">ITEC 2023: University of Miami</h1>
+   <div id="pichead" class="animated slideInUp">
+    <div class="image">
+      <a href="http://www.iteaonline.org"><img src="assets/images/itea.png" alt="ITEA Logo" style="width: 250px" style="height: 250px"></a>
+    </div>
+    <div class="image">
+      <a href="https://www.frost.miami.edu/"><img src="assets/images/frost.png" alt="Frost SoM Logo" style="width: 250px" style="height: 250px;"></a>
+    </div>
+  </div>
+  </header>
+  <nav class="animated fadeIn">
+  	<div id="navigation">
+  		<div class="links"><a href="index.html">Home</a></div>
+  		<div class="links"><a href="history.html">History</a></div>
+  		<div class="links"><a href="facilities.html">Facilities</a></div>
+  		<div class="links"><a href="miami.html">Miami</a></div>
+  		<div class="links"><a href="competitions.html">Competitions</a></div>
+  	</div>
+  </nav>
+<h5 class="animated fadeIn">It looks like we forgot to use our valve oil...on this site, you'll have to click every button <i>twice</i> for it to operate. Sorry.</h5>
+  <div id="homestuff" class="aniview" data-av-animation="fadeIn">
+  	<h2>Welcome!</h2>
+  	<p>This is the proposal page for the University of Miami's bid to host the International Tuba-Euphonium Conference in 2023. Click the links above to navigate the page and learn more about our school, the city, and potential conference details.</p>
+  </div>
+  <div id="overview" class="aniview" data-av-animation="fadeIn">
+  	<p>ITEC 2023 will mark the 50th anniversary of ITEA's existence, and will need to be a monmentous event to properly celebrate such an occasion. Taking place from May 28th to June 3rd, ITEC 2023 at the University of Miami will meet these expectations and then some.</p>
+  </div>
+  <div id="host">
+  <div id="heading" class="aniview" data-av-animation="fadeIn">
+  	<h2>Meet your host - Dr. Aaron Tindall</h2></div>
+  <div id="prof" class="aniview" data-av-animation="fadeIn">
+  	<img src="assets/images/tindall.jpg" alt="Aaron Tindall"></div>
+  <div id="bio" class="aniview" data-av-animation="fadeIn">
+  	<p>Dr. Aaron Tindall is currently Associate Professor of Tuba/Euphonium at the University of Miami Frost School of Music as well as Principal Tuba in the Sarasota Orchestra and the Eastern Music Festival Orchestra.<br> <br>
+
+  	He recieved his education from Penn State University, the Royal Northern College of Music, and the University of Colorado-Boulder, with additional studies at Indiana University and the Aspen Music Festival. His main teachers include Warren Deck, Steven Mead, Velvet Brown, Joe Alessi, Dan Perantoni, Mike Dunn, Mel Culbertson, Ben Pierce, and Roger Bobo.<br><br>
+
+  	Dr. Tindall is a Performing Artist for the Yamaha Corporation and Denis Wick Mouthpieces, having released his own line of tuba mouthpieces with the latter. He has also released three highly-acclaimed solo CDs.<br><br>
+
+  	To learn more about Aaron Tindall, visit <a href="https://people.miami.edu/profile/atindall@miami.edu">his page on the university website.</a></p>
+  </div>
+  </div>
+<footer class="aniview" data-av-animation="fadeIn">
+	<button onclick="contact()">Click here to reveal contact info</button>
+	<div id="leg">
+	<address>Have any questions? Need additional information?<br>
+Contact <a href="fakeemail@nowhere.com">Dr. Aaron Tindall</a> or <a href="anotherfakey@nowhere.com">webmaster Jason Donnelly</a>.
+	</address>
+	</div>
+	<div id="studiopic">
+		<img src="assets/images/studio.jpg" id="eupho">
+	</div>
+</footer>
+<script type="text/javascript">
+    function contact() {
+  var x = document.getElementById("leg");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+  </body>
+</html>

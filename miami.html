@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>City of Miami</title>
+    <link rel="stylesheet" href="assets/style/miami.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Oxygen:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script>
+     $(document).ready(function(){
+            $('.aniview').AniView();
+        });
+      </script>
+  </head>
+  <body>
+    <header>
+  <h1 class="animated rollIn">ITEC 2023: University of Miami</h1>
+  <div id="pichead" class="animated slideInUp">
+  	<div class="image">
+  		<a href="http://www.iteaonline.org"><img src="assets/images/itea.png" alt="ITEA Logo" style="width: 250px" style="height: 250px"></a>
+  	</div>
+  	<div class="image">
+  		<a href="https://www.frost.miami.edu/"><img src="assets/images/frost.png" alt="Frost SoM Logo" style="width: 250px" style="height: 250px"></a>
+  	</div>
+  </div>
+  </header>
+  <nav class="animated fadeIn">
+  	<div id="navigation">
+  		<div class="links"><a href="index.html">Home</a></div>
+  		<div class="links"><a href="history.html">History</a></div>
+  		<div class="links"><a href="facilities.html">Facilities</a></div>
+  		<div class="links"><a href="miami.html">Miami</a></div>
+  		<div class="links"><a href="competitions.html">Competitions</a></div>
+  	</div>
+  </nav>
+  <h5 class="animated fadeIn">It looks like we forgot to use our valve oil...on this site, you'll have to click every button <i>twice</i> for it to operate. Sorry.</h5>
+<h2>City of Miami</h2>
+<div id="picgrid" class="aniview" data-av-animation="fadeIn">
+	<div class="top"><img src="assets/images/miami.jpeg" alt="Miami...at night"class="top"></div>
+	<div class="top"><img src="assets/images/beach.jpg" alt="Miami Beach"class="top"></div>
+	<div class="top"><img src="assets/images/airport.jpg" alt="Miami International Airport"class="top"></div>
+	<div class="top"><img src="assets/images/metro.jpg" alt="Miami MetroRail"class="top"></div>
+	<div class="top"><img src="assets/images/hotel.jpg" alt="Miami hotel"class="top"></div>
+	<div class="top"><img src="assets/images/harry.jpg" alt="Havana Harrys"class="top"></div>
+</div>
+<div id="opening" class="aniview" data-av-animation="fadeIn">
+	<p>Outside of the university, the Greater Miami area has countless restauraunts, attractions, and options for housing and transportation.</p>
+</div>
+<div class="place" class="aniview" data-av-animation="fadeIn">
+	<h3 id="nightlife">Attractions</h3>
+	<p class="des">As one of America's leading tourist destinations, Miami has an nigh-endless supply of attractions for people of all interests, including beaches, nightlife, museums, and live music.</p>
+	<a href="https://www.miamiandbeaches.com/">Click here to learn more about events and attractons in the area.</a>
+</div>
+<div id="press" class="aniview" data-av-animation="fadeIn">
+	<button onclick="reco()">Want the studio's top restauraunt reccomendation? Click here to find out.</button>
+</div>
+<div id="food" class="aniview" data-av-animation="fadeIn">
+	<p>Havana Harry's...you'll thank us later...</p>
+</div>
+<div class="place" class="aniview" data-av-animation="fadeIn">
+	<h3>Transportation</h3>
+	<p class="des">
+	The Miami-Dade Metrorail has over 20 stops, including one at the University of Miami and one at Miami International Airport, making it perfect for cheap and efficient transport.
+	</p>
+	<a href="https://www8.miamidade.gov/global/transportation/metrorail.page">Click here to learn more about the Miami-Dade Metrorail</a>
+	<p class="des">Miami International Airport is one of America's largest airports, and handles flights to and from over 150 destinations. Fort Lauderdale/Hollywood International Airport, located about 20 miles away, also provides service from numerous locations.</p>
+	<a href="http://miami-airport.com/home.asp">Click here to learn move about Miami International Airport</a>
+</div>
+<div class="place" class="aniview" data-av-animation="fadeIn">
+	<h3>Housing</h3>
+	<p class="des">There are dozens of hotels within a short distance of the campus, and a select few would be available at a special conference-exclusive rate. In addition, Air B&B has a significant prescence in the Miami area with very affordable living accomodations.</p>
+</div>
+<footer class="aniview" data-av-animation="fadeIn">
+	<button onclick="contact()">Click here to reveal contact info</button>
+	<div id="leg">
+	<address>Have any questions? Need additional information?<br>
+Contact <a href="fakeemail@nowhere.com">Dr. Aaron Tindall</a> or <a href="anotherfakey@nowhere.com">webmaster Jason Donnelly</a>.
+	</address>
+	</div>
+	<div id="studiopic">
+		<img src="assets/images/studio.jpg" alt="The UMiami Tuba/Euphonium Studio" id="eupho">
+	</div>
+</footer>
+
+<script type="text/javascript">
+  function contact() {
+  var x = document.getElementById("leg");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  function reco() {
+  var x = document.getElementById("food");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+  </body>
+</html>

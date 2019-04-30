@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Competitions</title>
+    <link rel="stylesheet" href="assets/style/competitions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Oxygen:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script>
+     $(document).ready(function(){
+            $('.aniview').AniView();
+        });
+      </script>
+  </head>
+  <body>
+ <header>
+  <h1 class="animated rollIn">ITEC 2023: University of Miami</h1>
+  <div id="pichead" class="animated slideInUp">
+  	<div class="image">
+  		<a href="http://www.iteaonline.org"><img src="assets/images/itea.png" alt="ITEA Logo" style="width: 250px" style="height: 250px"></a>
+  	</div>
+  	<div class="image">
+  		<a href="https://www.frost.miami.edu/"><img src="assets/images/frost.png" alt="Frost SoM Logo" style="width: 250px" style="height: 250px"></a>
+  	</div>
+  </div>
+  </header>
+  <nav class="animated fadeIn">
+  	<div id="navigation">
+  		<div class="links"><a href="index.html">Home</a></div>
+  		<div class="links"><a href="history.html">History</a></div>
+  		<div class="links"><a href="facilities.html">Facilities</a></div>
+  		<div class="links"><a href="miami.html">Miami</a></div>
+  		<div class="links"><a href="competitions.html">Competitions</a></div>
+  	</div>
+  </nav>
+<h5 class="animated fadeIn">It looks like we forgot to use our valve oil...on this site, you'll have to click every button <i>twice</i> for it to operate. Sorry.</h5>
+ <h2>Competitions</h2>
+ <div id="opening" class="aniview" data-av-animation="fadeIn">
+	<p>A hallmark of every ITEC is the world-famous competitions. ITEC 2023 would be no exception, housing 13 competitions in total, including 3 brand-new contests never before seen at an ITEC.</p>
+</div>
+<div id="calc" class="aniview" data-av-animation="fadeIn">
+	<p id="math">Want to see how massive the grand prize will be? Enter any number of attendees and competitors to calculate!</p>
+</div>
+<div id="returning" class="aniview" data-av-animation="fadeIn">
+	<h3>Returning Competitions</h3>
+	<ul>
+		<li>Young Artist Euphonium Solo</li>
+		<li>Young Artist Tuba Solo</li>
+		<li>Artist Euphonium Solo</li>
+		<li>Artist Tuba Solo</li>
+		<li>Electronics Solo (1 division for tuba and euph)</li>
+		<li>Rich Matteson Jazz (1 division for tuba and euph)</li>
+		<li>Mock Orchestral Tuba</li>
+		<li>Mock Military Band Tuba</li>
+		<li>Mock Military Band Euphonium</li>
+		<li>Quartet/Small Ensemble</li>
+	</ul>
+</div>
+<div id="new" class="aniview" data-av-animation="fadeIn">
+<h3>New Competitions</h3>
+<p><b>Contemporary Solo</b>: In this contest, competitors will select any solo piece composed within the past 5 years to play. In addition, there will be a prescribed piece written specifically for the contest by an esteemed composer. Points are awarded for creativity and interpretation.</p>
+<p><b>Mixed Ensemble</b>: In this contest, entries will consist of chamber groups having between 2 and 6 musicians. A maximum of one tuba and one euphonium are allowed per group, and each group must also contain at least one non-brass performer. Repertoire will be selectly freely. Points are awarded based on creativity and cohesiveness of ensemble.</p>
+<p><b>Doubling</b>: In this contest, competitors will perform two solos on either tuba or euphonium - one prescribed piece and one free choice piece. Additionally, they will perform up to 10 minutes of any repetoire of their choice on something other than tuba or euphonium. Possibilities include other wind instruments, keyboards, voice, electronics, string instruments, and percussion. Points are awarded based on mastery, creativity, and overall excitement.</p>
+</div>
+<footer class="aniview" data-av-animation="fadeIn">
+	<button onclick="contact()">Click here to reveal contact info</button>
+	<div id="leg">
+	<address>Have any questions? Need additional information?<br>
+Contact <a href="fakeemail@nowhere.com">Dr. Aaron Tindall</a> or <a href="anotherfakey@nowhere.com">webmaster Jason Donnelly</a>.
+	</address>
+	</div>
+	<div id="studiopic">
+		<img src="assets/images/studio.jpg" alt="The UMiami Tuba/Euphonium Studio" id="eupho">
+	</div>
+</footer>
+
+<script type="text/javascript">
+  function contact() {
+  var x = document.getElementById("leg");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ for (var i = 1; i < 63; i++) {
+        console.log("Jason has worked for " + i + " hours");
+      }
+ console.log ("I couldn't figure out where to put a loop in my page, so here it is! Above, there should be a loop that goes up to how many hours I worked on this project...")
+</script>
+  </body>
+</html>

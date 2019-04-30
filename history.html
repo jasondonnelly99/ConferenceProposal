@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>History</title>
+    <link rel="stylesheet" href="assets/style/history.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Oxygen:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script>
+     $(document).ready(function(){
+            $('.aniview').AniView();
+        });
+      </script>
+  </head>
+  <body>
+ <header>
+  <h1 class="animated rollIn">ITEC 2023: University of Miami</h1>
+    <div id="pichead" class="animated slideInUp">
+  	<div class="image">
+  		<a href="http://www.iteaonline.org"><img src="assets/images/itea.png" alt="ITEA Logo" style="width: 250px" style="height: 250px"></a>
+  	</div>
+  	<div class="image">
+  		<a href="https://www.frost.miami.edu/"><img src="assets/images/frost.png" alt="Frost SoM Logo" style="width: 250px" style="height: 250px"></a>
+  	</div>
+  </div>
+  </header>
+  <nav class="animated fadeIn">
+  	<div id="navigation">
+  		<div class="links"><a href="index.html">Home</a></div>
+  		<div class="links"><a href="history.html">History</a></div>
+  		<div class="links"><a href="facilities.html">Facilities</a></div>
+  		<div class="links"><a href="miami.html">Miami</a></div>
+  		<div class="links"><a href="competitions.html">Competitions</a></div>
+  	</div>
+  </nav>
+<h5 class="animated fadeIn">It looks like we forgot to use our valve oil...on this site, you'll have to click every button <i>twice</i> for it to operate. Sorry.</h5>
+<h2>History</h2>
+<div id="picgrid" class="aniview" data-av-animation="fadeIn">
+	<div class="teacher"><img src="assets/images/connie.jpg" alt="Connie Weldon" class="tch"></div>
+	<div class="teacher"><img src="assets/images/stevens1.jpg" alt="John Stevens" class="tch"></div>
+	<div class="teacher"><img src="assets/images/olah.jpg" alt="John Olah" class="tch"></div>
+	<div class="teacher"><img src="assets/images/sam.jpg" alt="Sam Pilafian" class="tch"></div>
+	<div class="teacher"><img src="assets/images/tindall.jpg" alt="Aaron Tindall" class="tch"></div>
+</div>
+<div id="opening" class="aniview" data-av-animation="fadeIn">
+	<p>Since 1972, the University of Miami has been a force of reckoning in the tuba/euphonium world. With five esteemed professors and countless successful students in its history, it is a shining example of what a tuba/euphonium studio is capable of.</p>
+</div>
+<div id="testspot" onclick="start()" class="aniview" data-av-animation="fadeIn">
+	<h4>Think you're an informed scholar yourself? Click anywhere in this box to take a quiz. You just might win a prize!</h4>
+</div>
+<div id="congrats" class="aniview" data-av-animation="fadeIn">
+	<p>Congrats! You officially know your Miami tuba history!</p><br><br>
+	<button onclick="secret('#f0badd')">You've unlocked the secret background! Click here to apply it.</button>
+</div>
+<img src="assets/images/weldon.jpg" alt="Connie Weldon" class="prof2" class="aniview" data-av-animation="fadeIn">
+<div class="four" class="aniview" data-av-animation="fadeIn">
+	<h3>Connie Weldon</h3><br><br>
+	<p class="teachinfo">A member of the UMiami Class of 1953, Constance J "Connie" Weldon is considered to be the first female professional tubist in the United States. She has held positions with numerous acclaimed ensembles, including the Kansas City Philharmonic, the North Carolina Symphony, the Miami Philharmonic, and the Concertgebouw Orchestra.<br><br>
+	After being hired as professor of tuba at the University of Miami, she quickly became known as one of the country's leading pedagouges, founding the Univeristy of Miami Tuba Ensemble, the first credited group of its kind at any institution. Later, she would take on the role of Dean of Undergraduate Studies at the Frost School of Music.
+	</p>
+	<button onclick="conniefact()">Click here to reveal a fun fact!</button>
+	<p id="weldonhide"><b>She was awarded a Fulbright Fellowship in 1957 to study tuba in The Netherlands.</b></p>
+</div>
+<img src="assets/images/stevens2.jpg" alt="John Stevens" class="prof2" class="aniview" data-av-animation="fadeIn">
+<div class="four" class="aniview" data-av-animation="fadeIn">
+	<h3>John Stevens</h3><br><br>
+	<p class="teachinfo">John Stevens, a native of Buffalo, NY, holds degrees in tuba performance from the Eastman School of Music and Yale University. Today, he is most known as a prolific composer of brass music, with many of his works being standard repetoire for students and competitions.<br><br>
+	When Connie Weldon was promoted to Dean of Undergradute Studies in 1981, John Stevens was appointed as professor of tuba, a position he held until 1986.
+	</p>
+	<button onclick="johnfact()">Click here to reveal a fun fact!</button>
+	<p id="stevenshide"><b>He conducted the All-Star Ensemble at ITEC 2019 in Iowa City, Iowa.</b></p>
+</div>
+<img src="assets/images/john.jpg" alt="John Olah" class="prof2" class="aniview" data-av-animation="fadeIn">
+<div class="four" class="aniview" data-av-animation="fadeIn">
+	<h3>John Olah</h3><br><br>
+	<p class="teachinfo">A distinguished alumnus of the Baldwin Wallace Conservatory, John Olah performed with the New Mexico Symphony Orchestra, the Cleveland Ballet Orchestra, the Ohio Chamber Orchestra, the Santa Fe Chamber Orchestra, the New Mexico Brass Quintet, the Cleveland Brass Quintet, the Cleveland Brass Consort, American Ballet Theater, Bolshoi Ballet, and the Blossom Festival Band. He also recorded with the Cleveland Orchestra and the Cleveland Symphonic Winds.<br><br>
+	Hired in 1986, John Olah served as professor of tuba until 2012, when he was appointed as a Professor of Music Theory. He continued to teach at Frost until his passing in 2018.
+	</p>
+	<button onclick="jolahfact()">Click here to reveal a fun fact!</button>
+	<p id="olahhide"><b>His personal library, which was donated to the studio after his passing, contains many obscure and previously-lost tuba pieces that have now been catalouged.</b></p>
+</div>
+<img src="assets/images/pilafian.jpg" alt="Sam Pilafian" class="prof2" class="aniview" data-av-animation="fadeIn">
+<div class="four" class="aniview" data-av-animation="fadeIn">
+	<h3>Sam Pilafian</h3><br><br>
+	<p class="teachinfo">Sam Pilafian was a world-renowned tuba artist versatile in both classical and jazz realms. He recorded and performed with the Boston Symphony Orchestra, the New York Philharmonic Orchestra, the Metropolitan Opera Orchestra, Duke Ellington Orchestra, Lionel Hampton, and Pink Floyd. As a solo jazz artist, Pilafian recorded fifteen CDs. A member of many chamber groups over the years, Pilafian is perhaps best known as a founding member of the internationally recognized classical ensemble Empire Brass Quintet. Solo recital and concerto performances took him to Canada, Spain, Sweden, Switzerland, Japan, Italy, Austria, Germany and England.<br><br>
+	Sam Pilafian was appointed as professor of tuba and euphonium in 2009 and remained on faculty until 2012, when he joined the Boston Brass.</p>
+<button onclick="samfact()">Click here to reveal a fun fact!</button>
+	<p id="pilafianhide"><b>Sam was the first tuba player to be both the coolest <i>in town</i> and the coolest <i>around.</i></b></p>
+</div>
+<div id="current" class="aniview" data-av-animation="fadeIn">
+	<h3>The Studio</h3>
+	<p id="stuff">Today, the UMiami tuba/euphonium studio, led by Dr. Aaron Tindall, stands as one of the most prominent and successful college studios in the nation. Members of the studio consistently win contests at the national and international level, advance in professional auditions, and place into esteemed music festivals and graduate programs.</p>
+</div>
+  <footer class="aniview" data-av-animation="fadeIn">
+	<button onclick="contact()">Click here to reveal contact info</button>
+	<div id="leg">
+	<address>Have any questions? Need additional information?<br>
+Contact <a href="fakeemail@nowhere.com">Dr. Aaron Tindall</a> or <a href="anotherfakey@nowhere.com">webmaster Jason Donnelly</a>.
+	</address>
+	</div>
+	<div id="studiopic">
+		<img src="assets/images/studio.jpg" alt="The UMiami Tuba/Euphonium Studio" id="eupho">
+	</div>
+</footer>
+
+<script type="text/javascript">
+  function contact() {
+  var x = document.getElementById("leg");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ function samfact() {
+  var x = document.getElementById("pilafianhide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ function conniefact() {
+  var x = document.getElementById("weldonhide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ function johnfact() {
+  var x = document.getElementById("stevenshide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+ function jolahfact() {
+  var x = document.getElementById("olahhide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+var start = function(){
+	var correct = 0;
+	var incorrect = 0;
+	var question = "none";
+	var input = "none";
+	var answer = "none";
+var ask = function(){ 
+                input = prompt(question);
+};
+var score = function(){ 
+        if(input == answer){ 
+                correct = correct+1;
+                alert("correct");
+        }else{
+                incorrect = incorrect+1;
+                alert("incorrect");
+        }
+};
+var short = function(){
+        ask();
+        score();
+};
+alert("Welcome to your UMiami tuba history quiz! Make sure to not type any uppercase characters when answering.");
+question = "When was Connie Weldon hired?";
+answer = "1972";
+short();
+
+question = "Which group has John Olah NOT performed with? a - Cleveland Orchestra, b - Los Angeles Chamber Orchestra, c - New Mexico Brass Quintet";
+answer = "b";
+short();
+question = "What famous group did Sam Pilafian help found? a - Empire Brass, b - Boston Brass, c - Miami Brass Choir";
+answer = "a";
+short();
+question = "Who of the following did NOT teach Aaron Tindall at some point? a - Warren Deck, b - Joe Alessi, c - Velvet Brown, d - Roger Bobo, e - Norman Pearson, f - all other answers are incorrect";
+answer = "e";
+short();
+question = "Last, but not least, who made this website? a - Aaron Tindall, b - Eliot Rodriguez, c - Jason Donnelly";
+answer = "c";
+short();
+alert("Finished! You got " + correct + " out of 5 correct.");
+
+var yy = document.getElementById("congrats")
+if (correct === 5) {yy.style.display = "block"}
+	else{}
+}
+
+function secret(color) {
+   document.body.style.background = color;
+}
+
+</script>
+  </body>
+</html>
